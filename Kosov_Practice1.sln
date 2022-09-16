@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kosov_Practice1", "Kosov_Practice1\Kosov_Practice1.csproj", "{33856320-529D-415D-BA9F-1FA4C55373F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib_4", "Lib_4\Lib_4.csproj", "{37FCC97F-79D6-48F2-BCCF-EECC59AF1C6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{33856320-529D-415D-BA9F-1FA4C55373F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33856320-529D-415D-BA9F-1FA4C55373F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33856320-529D-415D-BA9F-1FA4C55373F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37FCC97F-79D6-48F2-BCCF-EECC59AF1C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37FCC97F-79D6-48F2-BCCF-EECC59AF1C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37FCC97F-79D6-48F2-BCCF-EECC59AF1C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37FCC97F-79D6-48F2-BCCF-EECC59AF1C6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
