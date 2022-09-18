@@ -28,7 +28,7 @@ namespace Kosov_Practice1
 
         private void About(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Практическая №1 \nКосов Даниил ИСП-34");
+            MessageBox.Show("Косов Даниил ИСП-34 \nПрактическая №1");
         }
 
         private void Exit(object sender, RoutedEventArgs e)

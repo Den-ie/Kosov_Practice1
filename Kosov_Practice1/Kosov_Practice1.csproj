@@ -8,7 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="HearthStone-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Lib_4\Lib_4.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="HearthStone-icon.png" />
   </ItemGroup>
 
 </Project>
