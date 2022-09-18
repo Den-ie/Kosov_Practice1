@@ -25,5 +25,15 @@ namespace Kosov_Practice1
         {
             InitializeComponent();
         }
+
+        private void About(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Практическая №1 \nКосов Даниил ИСП-34");
+        }
+
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Выход");
+        }
     }
 }

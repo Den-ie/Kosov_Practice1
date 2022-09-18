@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox Margin="150" Text="Test"/>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="О программе"
+                      Click="About"/>
+            
+            <MenuItem Header="Выход"
+                      Click="Exit"/>
+        </Menu>
     </Grid>
 </Window>
