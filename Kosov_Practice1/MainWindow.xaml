@@ -9,18 +9,33 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Menu VerticalAlignment="Top">
+
+        <GroupBox Margin="0,20,0,0"
+                  Header="Ввод данных">
+            <Grid>
+                <TextBox Grid.Column="0"
+                 Grid.Row="0"/>
+            </Grid>
+        </GroupBox>
+    
+        <Menu VerticalAlignment="Top"
+              Grid.ColumnSpan="2">
             <MenuItem Header="О программе"
                       Click="About"/>
             
             <MenuItem Header="Выход"
                       Click="Exit"/>
         </Menu>
+    
     </Grid>
 </Window>

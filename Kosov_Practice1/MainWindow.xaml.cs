@@ -24,16 +24,17 @@ namespace Kosov_Practice1
         public MainWindow()
         {
             InitializeComponent();
+            this.Height += 25;
         }
 
         private void About(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Косов Даниил ИСП-34 \nПрактическая №1");
+            MessageBox.Show("Косов Даниил ИСП-34 \nПрактическая №1 \nСгенерировать массив заполненный случайными целыми числами, распределенных в диапазоне от 10 до 40.\r\nНайти минимальное значение. Вывести на экран на одной строке сгенерированные числа, на другой строке результат. \nВ классе реализовать статический метод с именем Min");
         }
 
         private void Exit(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Выход");
+            this.Close();
         }
     }
 }
