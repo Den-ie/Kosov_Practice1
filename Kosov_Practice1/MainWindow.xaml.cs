@@ -36,5 +36,29 @@ namespace Kosov_Practice1
         {
             this.Close();
         }
+
+        private void CreateMas()
+        {
+            
+        }
+
+        private void SpanCheck(object sender, RoutedEventArgs e)
+        {
+            From.IsEnabled = true;
+            To.IsEnabled = true;
+            LabelFrom.IsEnabled = true;
+            LabelTo.IsEnabled = true;
+        }
+
+        private void SpanUncheck(object sender, RoutedEventArgs e)
+        {
+            From.IsEnabled = false;
+            To.IsEnabled = false;
+            LabelFrom.IsEnabled = false;
+            LabelTo.IsEnabled = false;
+
+            From.Text = null;
+            To.Text = null;
+        }
     }
 }

@@ -5,10 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kosov_Practice1"
         mc:Ignorable="d"
-        Title="HearthStone" Height="450" Width="800" ResizeMode="CanMinimize" Icon="/HearthStone-icon.png">
+        Title="HearthStone" Height="230" Width="500" ResizeMode="CanMinimize" Icon="/HearthStone-icon.png">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
@@ -16,26 +15,65 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
-            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
 
-        <GroupBox Margin="0,20,0,0"
-                  Header="Ввод данных">
+        <GroupBox Margin="5,20,5,0"
+                  Header="Ввод данных"
+                  Grid.RowSpan="2">
             <Grid>
-                <TextBox Grid.Column="0"
-                 Grid.Row="0"/>
+                <Label Content="Длинна массива"
+                       Margin="5,5,120,140"      />
+
+                <TextBox x:Name="MassLenght" 
+                         Grid.Column="0"
+                         Grid.Row="0"
+                         Margin="8,30,120,125"/>
+
+                <CheckBox x:Name="SpanOffOn" 
+                          Content="Свой диапозон" 
+                          Margin="8,60,110,96" 
+                          Checked="SpanCheck" 
+                          Unchecked="SpanUncheck"
+                          IsChecked="False"/>
+
+                <Label x:Name="LabelFrom"
+                       Content="От"
+                       Margin="5,75,187,71"/>
+
+                <TextBox     x:Name="From"
+                         Margin="8,100,145,55" 
+                         IsEnabled="False"/>
+
+                <Label x:Name="LabelTo"
+                       Content="До"
+                       Margin="120,75,74,70"/>
+
+                <TextBox x:Name="To"
+                         Margin="123,100,25,55" 
+                         IsEnabled="False"/>
+
             </Grid>
         </GroupBox>
-    
+
+        <GroupBox Header="Вывод результатов" 
+                  Grid.Column="2"
+                  Grid.RowSpan="2"
+                  Margin="5,20,5,0">
+            <Grid>
+                
+            </Grid>
+        </GroupBox>
+        
         <Menu VerticalAlignment="Top"
               Grid.ColumnSpan="2">
+
             <MenuItem Header="О программе"
                       Click="About"/>
-            
+
             <MenuItem Header="Выход"
                       Click="Exit"/>
         </Menu>
-    
+
     </Grid>
 </Window>
