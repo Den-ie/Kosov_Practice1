@@ -37,9 +37,11 @@ namespace Kosov_Practice1
             this.Close();
         }
 
-        private void CreateMas()
+        private void CreateMas(object sender, RoutedEventArgs e)
         {
-            
+            int x = Convert.ToInt32(MassLenght.Text);
+            int[] Array = Calculating.ArrayCreate(x);
+            Answer.Text = string.Join(" ",Array);
         }
 
         private void SpanCheck(object sender, RoutedEventArgs e)
@@ -60,5 +62,6 @@ namespace Kosov_Practice1
             From.Text = null;
             To.Text = null;
         }
+
     }
 }
