@@ -66,11 +66,18 @@
                   Grid.RowSpan="2"
                   Margin="5,20,5,0">
             <Grid>
-                <Label Content="Ответ"
+                <Label Content="Массив"
                        Margin="5,5,170,140"/>
 
                 <TextBox x:Name="Answer"
                          Margin="8,30,120,125"/>
+
+                <Label Content="Мин.элемент"
+                       Margin="5,47,104,101"/>
+                
+                <TextBox x:Name="Min"
+                         Margin="8,70,120,85"/>
+               
             </Grid>
         </GroupBox>
         

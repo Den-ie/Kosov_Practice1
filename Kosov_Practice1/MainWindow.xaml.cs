@@ -39,9 +39,14 @@ namespace Kosov_Practice1
 
         private void CreateMas(object sender, RoutedEventArgs e)
         {
-            int x = Convert.ToInt32(MassLenght.Text);
-            int[] Array = Calculating.ArrayCreate(x);
+            int count = Convert.ToInt32(MassLenght.Text);
+
+            int from = Convert.ToInt32(From.Text);
+            int to = Convert.ToInt32(To.Text);
+            int[] Array = MathString.ArrayCreate(count, from, to);
             Answer.Text = string.Join(" ",Array);
+
+            Min.Text = Array.MyMin().ToString();
         }
 
         private void SpanCheck(object sender, RoutedEventArgs e)

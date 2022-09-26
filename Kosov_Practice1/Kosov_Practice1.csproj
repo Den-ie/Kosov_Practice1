@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Lib_4\Calculating.csproj" />
+    <ProjectReference Include="..\Lib_4\MathString.csproj" />
   </ItemGroup>
 
   <ItemGroup>
