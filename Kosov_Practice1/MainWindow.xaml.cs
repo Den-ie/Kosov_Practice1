@@ -39,34 +39,17 @@ namespace Kosov_Practice1
 
         private void CreateMas(object sender, RoutedEventArgs e)
         {
-            int count = Convert.ToInt32(MassLenght.Text);
+            bool x = Int32.TryParse(MassLenght.Text, out int count);
 
-            int from = Convert.ToInt32(From.Text);
-            int to = Convert.ToInt32(To.Text);
-            int[] Array = MathString.ArrayCreate(count, from, to);
+            if(x == true && count > 0)
+            {
+            int[] Array = MathString.ArrayCreate(count);
             Answer.Text = string.Join(" ",Array);
 
             Min.Text = Array.MyMin().ToString();
+            }
+            else
+            MessageBox.Show("Некорректные данные");
         }
-
-        private void SpanCheck(object sender, RoutedEventArgs e)
-        {
-            From.IsEnabled = true;
-            To.IsEnabled = true;
-            LabelFrom.IsEnabled = true;
-            LabelTo.IsEnabled = true;
-        }
-
-        private void SpanUncheck(object sender, RoutedEventArgs e)
-        {
-            From.IsEnabled = false;
-            To.IsEnabled = false;
-            LabelFrom.IsEnabled = false;
-            LabelTo.IsEnabled = false;
-
-            From.Text = null;
-            To.Text = null;
-        }
-
     }
 }

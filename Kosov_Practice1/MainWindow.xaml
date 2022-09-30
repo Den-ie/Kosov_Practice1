@@ -17,46 +17,23 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-
         <GroupBox Margin="5,20,5,0"
                   Header="Ввод данных"
                   Grid.RowSpan="2">
             <Grid>
                 <Button x:Name="Create"
                         Content="Создать массив"
-                        Margin="120,15,10,125"
-                        Click="CreateMas"/>
+                        Margin="10,55,10,10"
+                        Click="CreateMas">
+                </Button>
 
                 <Label Content="Длинна массива"
-                       Margin="5,5,120,140"      />
+                       Margin="5,5,108,140"      />
 
                 <TextBox x:Name="MassLenght" 
                          Grid.Column="0"
                          Grid.Row="0"
                          Margin="8,30,120,125"/>
-
-                <CheckBox x:Name="SpanOffOn" 
-                          Content="Свой диапозон" 
-                          Margin="8,60,110,96" 
-                          Checked="SpanCheck" 
-                          Unchecked="SpanUncheck"
-                          IsChecked="False"/>
-
-                <Label x:Name="LabelFrom"
-                       Content="От"
-                       Margin="5,75,187,71"/>
-
-                <TextBox     x:Name="From"
-                         Margin="8,100,145,55" 
-                         IsEnabled="False"/>
-
-                <Label x:Name="LabelTo"
-                       Content="До"
-                       Margin="120,75,74,70"/>
-
-                <TextBox x:Name="To"
-                         Margin="123,100,25,55" 
-                         IsEnabled="False"/>
 
             </Grid>
         </GroupBox>
@@ -67,20 +44,20 @@
                   Margin="5,20,5,0">
             <Grid>
                 <Label Content="Массив"
-                       Margin="5,5,170,140"/>
+                       Margin="5,5,155,140"/>
 
                 <TextBox x:Name="Answer"
-                         Margin="8,30,120,125"/>
+                         Margin="8,30,10,125"/>
 
                 <Label Content="Мин.элемент"
                        Margin="5,47,104,101"/>
-                
+
                 <TextBox x:Name="Min"
-                         Margin="8,70,120,85"/>
-               
+                         Margin="8,70,10,85"/>
+
             </Grid>
         </GroupBox>
-        
+
         <Menu VerticalAlignment="Top"
               Grid.ColumnSpan="2">
 
@@ -90,6 +67,7 @@
             <MenuItem Header="Выход"
                       Click="Exit"/>
         </Menu>
+
 
     </Grid>
 </Window>

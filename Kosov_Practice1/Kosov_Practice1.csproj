@@ -9,6 +9,8 @@
 
   <ItemGroup>
     <None Remove="HearthStone-icon.png" />
+    <None Remove="ofVTcjDhFI0osls.webp" />
+    <None Remove="Безымянный.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +19,8 @@
 
   <ItemGroup>
     <Resource Include="HearthStone-icon.png" />
+    <Resource Include="ofVTcjDhFI0osls.webp" />
+    <Resource Include="Безымянный.png" />
   </ItemGroup>
 
 </Project>
