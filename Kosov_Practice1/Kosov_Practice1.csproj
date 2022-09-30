@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove="HearthStone-icon.png" />
+    <None Remove="HS_Battlegrounds_ALL_EN-2.png" />
     <None Remove="ofVTcjDhFI0osls.webp" />
     <None Remove="Безымянный.png" />
   </ItemGroup>
@@ -19,6 +20,7 @@
 
   <ItemGroup>
     <Resource Include="HearthStone-icon.png" />
+    <Resource Include="HS_Battlegrounds_ALL_EN-2.png" />
     <Resource Include="ofVTcjDhFI0osls.webp" />
     <Resource Include="Безымянный.png" />
   </ItemGroup>

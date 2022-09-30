@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Kosov_Practice1"
         mc:Ignorable="d"
         Title="HearthStone" Height="230" Width="500" ResizeMode="CanMinimize" Icon="/HearthStone-icon.png">
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -33,7 +34,7 @@
                 <TextBox x:Name="MassLenght" 
                          Grid.Column="0"
                          Grid.Row="0"
-                         Margin="8,30,120,125"/>
+                         Margin="10,30,118,125"/>
 
             </Grid>
         </GroupBox>
@@ -43,16 +44,22 @@
                   Grid.RowSpan="2"
                   Margin="5,20,5,0">
             <Grid>
+
+                <Image Source="/HS_Battlegrounds_ALL_EN-2.png"
+                       Margin="0,65,0,-15"/>
+
                 <Label Content="Массив"
                        Margin="5,5,155,140"/>
 
                 <TextBox x:Name="Answer"
+                         IsReadOnly="True"
                          Margin="8,30,10,125"/>
 
                 <Label Content="Мин.элемент"
                        Margin="5,47,104,101"/>
 
                 <TextBox x:Name="Min"
+                         IsReadOnly="True"
                          Margin="8,70,10,85"/>
 
             </Grid>
@@ -67,7 +74,6 @@
             <MenuItem Header="Выход"
                       Click="Exit"/>
         </Menu>
-
 
     </Grid>
 </Window>
