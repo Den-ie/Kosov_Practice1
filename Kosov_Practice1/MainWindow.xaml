@@ -46,7 +46,7 @@
             <Grid>
 
                 <Image Source="/HS_Battlegrounds_ALL_EN-2.png"
-                       Margin="0,65,0,-15"/>
+                       Margin="0,70,0,-20"/>
 
                 <Label Content="Массив"
                        Margin="5,5,155,140"/>
